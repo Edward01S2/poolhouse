@@ -1,0 +1,41 @@
+/**
+ * Components
+ */
+
+ [x-cloak] {
+   @apply hidden;
+ }
+
+ .container-full {
+	left: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+	max-width: 100vw;
+	position: relative;
+	right: 50%;
+	width: 100vw;
+}
+
+.nav-study {
+  @apply md:rounded-full md:border-2 md:px-3 md:py-1 md:text-black md:border-white md:bg-white hover:bg-black hover:text-white hover:border-white transition duration-300;
+}
+
+.nav-link.active {
+  @apply font-bold;
+}
+
+.nav-link.active.nav-study {
+  
+}
+
+.video-hover {
+	&:hover {
+		img{
+			transition-property: filter, -webkit-filter;
+    	filter:grayscale(1);
+		}
+		.video-text {
+			@apply block;
+		}
+	}
+}

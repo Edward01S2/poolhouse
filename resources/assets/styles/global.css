@@ -1,0 +1,11 @@
+/**
+ * Global
+ */
+
+ html {
+   @apply font-proxima bg-black;
+ }
+
+ a {
+   @apply transition duration-150;
+ }
